@@ -25,7 +25,7 @@ const InputPage = ({setModalVisible}) => {
              
             </div>
 
-            <div className="w-11/12 mt-10 mx-auto max-w-[75em] grid grid-cols-2 gap-10">
+            <div className="w-11/12 mt-10 mx-auto max-w-[75em] grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-10">
                 <InputForms />
                 <DataList setModalVisible={setModalVisible} />
             </div>

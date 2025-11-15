@@ -70,7 +70,7 @@ const  DataList = ({ setModalVisible }) => {
         <div>
            <div className="list-box grid grid-cols-7 bg-secondary rounded-full">
                {
-                rawData.map((_, index) => <p onClick={() => setDayIndex(index)} className={`${index == dayIndex && "bg-primary text-white rounded-full"} transition-all duration-300 cursor-pointer my-2 mx-2 text-center py-2 px-2`} key={index}>Day {index + 1}</p>)
+                rawData.map((_, index) => <p onClick={() => setDayIndex(index)} className={`${index == dayIndex && "lg:bg-primary lg:text-white lg:rounded-full"} transition-all duration-300 cursor-pointer my-2 mx-2 text-center py-2 px-2 text-sm whitespace-nowrap lg:text-base`} key={index}>Day {index + 1}</p>)
                }
            </div>
 
@@ -100,7 +100,7 @@ const  DataList = ({ setModalVisible }) => {
 
            </div>
            
-           <div className="list-box flex items-center mt-10 justify-between">
+           <div className="list-box flex flex-col gap-10 items-center mt-10 justify-between lg:flex-row">
              <button onClick={handleGenerateData} className={`${isLoading ? "cursor-not-allowed" : "cursor-pointer"} bg-primary flex justify-center items-center text-white py-3 px-6 relative rounded-lg`}>
                 <span className={isLoading && "opacity-0"}>Generate Schedule</span>
                 <div className={`${!isLoading && "opacity-0"} lds-roller scale-[.4] absolute`}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
