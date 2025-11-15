@@ -76,7 +76,7 @@ const  DataList = ({ setModalVisible }) => {
 
            <div className="border list-box border-[#D9D9D9] mt-10 p-7 rounded-2xl">
               <div className="flex justify-between items-center">
-                  <h3 className="text-dark text-2xl font-semibold">Day 1</h3>
+                  <h3 className="text-dark text-2xl font-semibold">Day {dayIndex + 1}</h3>
 
                   <p className="text-dark bg-[#D9D9D9] rounded-full px-4 text-sm font-semibold py-2">{raw[2][dayIndex].length} total servings</p>
               </div>
